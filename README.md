@@ -197,22 +197,32 @@ python -m http.server 8000
 Then visit `http://localhost:8000` in your web browser.
 
 ---
+## 🌍 SDG Relevance
 
-## 7. Acceptance Test Verification Matrix
+This project contributes to the following United Nations Sustainable Development Goals (SDGs):
 
-| # | Test Scenario | Status | Verification Detail |
-|---|---|:---:|---|
-| 1 | App starts successfully in browser | Passed | Flutter web build compiles with zero errors. |
-| 2 | Add medicine with two daily reminder times | Passed | Add Medicine form supports Once, Twice, Three times, or Custom reminder times. |
-| 3 | Medicine appears in dashboard and medicine list | Passed | Live sync between StorageService, Dashboard, and Medicine List. |
-| 4 | Medicine persists after page refresh | Passed | Stored in browser `localStorage` via `shared_preferences`. |
-| 5 | Editing a medicine updates saved record | Passed | Preserves ID and createdAt while updating schedule and dosages. |
-| 6 | Deleting a medicine removes from active schedules | Passed | Deletes medicine with confirmation dialog while preserving past dose history. |
-| 7 | Invalid forms show appropriate errors | Passed | Checks required name, dosage, date range (end >= start), and reminder times. |
-| 8 | Search and filtering return correct results | Passed | Real-time text search and All/Active/Completed filter chips. |
-| 9 | Marking dose as taken updates status and history | Passed | Generates DoseHistory record and updates status to Taken. |
-| 10 | Marking dose as skipped updates status and history | Passed | Generates DoseHistory record and updates status to Skipped. |
-| 11 | Multiple doses per day maintain separate statuses | Passed | Unique occurrence keys (`${medicineId}_${date}_${time}`) isolate doses. |
-| 12 | Dashboard counts reflect actual saved data | Passed | Dynamic counters for Total, Scheduled, Taken, Upcoming, and Missed. |
-| 13 | Responsive desktop & mobile layouts | Passed | `NavigationRail` on wide screens ($\ge 800\text{px}$) and `NavigationBar` on mobile. |
-| 14 | Transparent web reminder limitations | Passed | Clear disclosure on Settings and honest architecture without fake background timers. |
+### SDG 3 – Good Health and Well-being
+MediReminder supports better health management by helping individuals organize their medication schedules, track their daily medicine intake, and maintain medication records. It encourages consistent medication habits and promotes better awareness of personal healthcare routines.
+
+### SDG 10 – Reduced Inequalities
+The application aims to make digital medication management easier to access through a simple and user-friendly interface, helping individuals with different levels of technical knowledge manage their medication schedules.
+
+### SDG 9 – Industry, Innovation and Infrastructure
+MediReminder demonstrates how digital innovation can be used to address everyday healthcare challenges through a technology-based medication management solution.
+
+## ❤️ Social Impact
+
+MediReminder aims to make daily medication management easier, especially for elderly individuals, patients with long-term medication requirements, and people with busy schedules.
+
+**Key Social Benefits:**
+
+- **Medication Awareness:** Helps users stay organized with their prescribed medicines.
+- **Reduced Forgetfulness:** Provides a structured way to manage medication schedules.
+- **Better Tracking:** Allows users to maintain records of their medication intake.
+- **Support for Elderly Individuals:** Offers a simple interface to manage daily medicines.
+- **Convenience:** Reduces dependence on handwritten medication schedules.
+- **Healthcare Awareness:** Encourages individuals to take responsibility for following their prescribed medication routines.
+
+### Long-Term Social Vision
+
+To promote accessible and technology-driven medication management, helping individuals develop consistent medicine-taking habits and supporting healthier communities.
